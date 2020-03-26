@@ -9,7 +9,7 @@ android:
     - android-29
 
 script:
-  - ./gradlew clean build
+  - ./gradlew clean build assemble
 
 # deploy section
 deploy:
