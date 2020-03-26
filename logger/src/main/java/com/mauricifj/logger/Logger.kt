@@ -4,7 +4,7 @@ import android.util.Log
 
 object Logger {
 
-    private val TAG = "LOGGER.TAG"
+    private const val TAG = "LOGGER.TAG"
 
     fun error(message: String, throwable: Throwable? = null) {
         Log.e(TAG, message, throwable)
