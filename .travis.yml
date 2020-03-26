@@ -8,12 +8,9 @@ android:
     # The SDK version used to compile your project
     - android-29
 
-script:
-  - ./gradlew clean build assemble
-
 # deploy section
 deploy:
   provider: script
-  script: ./gradlew bintrayUpload
+  script: ./gradlew clean build assemble bintrayUpload
   on:
     branch: master
