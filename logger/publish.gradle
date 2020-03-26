@@ -53,9 +53,20 @@ publishing {
     }
 }
 
+Properties properties = new Properties()
+if (project.rootProject.file('local.properties').canRead()) {
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+    ext.bintray_user = properties.getProperty('BINTRAY_USER')
+    ext.bintray_key = properties.getProperty('BINTRAY_KEY')
+}
+else {
+    ext.bintray_user = System.getenv('BINTRAY_USER')
+    ext.bintray_key = System.getenv('BINTRAY_KEY')
+}
+
 bintray {
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_KEY')
+    user = bintray_user
+    key = bintray_key
     publications = ['production']
     publish = true
     override = true
