@@ -2,6 +2,31 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.bintray'
 
+ext {
+    bintrayRepo = 'logger'
+    bintrayName = 'logger'
+
+    publishedGroupId = 'com.mauricifj'
+    libraryName = 'Logger'
+    artifact = 'logger'
+
+    libraryDescription = 'Logger Library is a publication test'
+
+    siteUrl = 'https://github.com/Mauricifj/logger'
+    gitUrl = 'https://github.com/Mauricifj/logger.git'
+
+    libraryVersion = '1.0.1'
+
+    developerId = 'mauricifj'
+    developerName = 'Maurici Ferreira Junior'
+    developerEmail = 'm.f.j@hotmail.com'
+    developerUrl = "https://github.com/Mauricifj"
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"

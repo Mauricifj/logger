@@ -1,38 +1,32 @@
 apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.bintray'
 
-version '1.0.0'
-group 'com.mauricifj'
-description 'Logger Library is a publication test'
-def package_name = 'logger'
-def repository = 'logger'
-
 // Create the pom configuration:
 def pomConfig = {
     developers {
         developer {
-            id "mauricifj"
-            name "Maurici Ferreira Junior"
-            email "m.f.j@hotmail.com"
+            id developerId
+            name developerName
+            email developerEmail
         }
     }
 
     scm {
-        url "https://github.com/Mauricifj"
+        url developerUrl
     }
 }
 
 publishing {
     publications {
         production(MavenPublication) {
-            groupId this.group
-            artifactId package_name
-            version this.version
+            groupId publishedGroupId
+            artifactId artifact
+            version libraryVersion
 
             // Define this explicitly if using implementation or api configurations
             pom.withXml {
                 def root = asNode()
-                root.appendNode('description', this.description)
+                root.appendNode('description', libraryDescription)
                 root.appendNode('name', 'Logger Library')
                 root.children().last() + pomConfig
 
@@ -71,14 +65,14 @@ bintray {
     publish = true
     override = true
     pkg {
-        repo = repository
-        name = package_name
-        licenses = ['MIT']
-        vcsUrl = 'https://github.com/Mauricifj/logger.git'
+        repo = bintrayRepo
+        name = bintrayName
+        licenses = allLicenses
+        vcsUrl = gitUrl
         publicDownloadNumbers = true
         version {
-            name = this.version
-            desc = this.description
+            name = libraryVersion
+            desc = libraryDescription
             released  = new Date()
         }
     }
