@@ -25,12 +25,12 @@ task sourcesJar(type: Jar) {
 task javadocJar(type: Jar) {
     dependsOn (dokka)
     archiveClassifier = 'javadoc'
-    from "$buildDir/dokka/$project.name"
+    from "$buildDir/docs/javadoc"
 }
 
 dokka {
-    outputFormat = 'html'
-    outputDirectory = "$buildDir/dokka"
+    outputFormat = 'html-as-java'
+    outputDirectory = "$buildDir/docs/javadoc"
 }
 
 afterEvaluate {

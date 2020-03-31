@@ -1,4 +1,4 @@
-package com.mauricifj.logger
+package com.mauricifj.simplelogger
 
 import org.junit.Test
 

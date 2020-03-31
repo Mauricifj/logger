@@ -1,2 +1,2 @@
-rootProject.name='Logger'
-include ':logger', ':app'
+rootProject.name='SimpleLogger'
+include ':simplelogger', ':app'

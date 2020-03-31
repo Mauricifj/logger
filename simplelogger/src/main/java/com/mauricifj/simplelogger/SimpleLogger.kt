@@ -1,18 +1,20 @@
-package com.mauricifj.logger
+package com.mauricifj.simplelogger
 
 import android.util.Log
 
 /**
  * The simplest logger tool.
+ * <p>
  * This object has a builtin tag and methods to log debug, error, info and warning messages.
  */
-object Logger {
+object SimpleLogger {
 
-    private const val TAG = "LOGGER.TAG"
+    private const val TAG = "SIMPLE.LOGGER.TAG"
 
     /**
      * Logs a message in debug level.
-     * It uses "LOGGER.TAG" as its tag.
+     * <p>
+     * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
      */
@@ -21,8 +23,9 @@ object Logger {
     }
 
     /**
-     * Logs a message and a throwable in error level.
-     * It uses "LOGGER.TAG" as its tag.
+     * Logs a message and an optional throwable in error level.
+     * <p>
+     * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
      * @param[throwable] optional throwable to be logged
@@ -33,7 +36,8 @@ object Logger {
 
     /**
      * Logs a message in info level.
-     * It uses "LOGGER.TAG" as its tag.
+     * <p>
+     * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
      */
@@ -43,7 +47,8 @@ object Logger {
 
     /**
      * Logs a message in warning level.
-     * It uses "LOGGER.TAG" as its tag.
+     * <p>
+     * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
      */

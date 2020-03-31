@@ -10,10 +10,10 @@ ext {
     libraryName = project.name
     artifact = project.name
 
-    libraryDescription = 'Logger Library is a bintray publication test'
+    libraryDescription = 'SimpleLogger Library is a bintray publication test'
 
-    siteUrl = 'https://github.com/Mauricifj/logger'
-    gitUrl = 'https://github.com/Mauricifj/logger.git'
+    siteUrl = 'https://github.com/Mauricifj/simplelogger'
+    gitUrl = 'https://github.com/Mauricifj/simplelogger.git'
 
     libraryVersion = '1.0.0'
 
