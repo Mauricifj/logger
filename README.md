@@ -1,6 +1,6 @@
 # SimpleLogger [![Status](https://travis-ci.com/Mauricifj/logger.svg?branch=master)](https://travis-ci.com/Mauricifj/logger) [ ![Download](https://api.bintray.com/packages/mauricifj/simplelogger/simplelogger/images/download.svg) ](https://bintray.com/mauricifj/simplelogger/simplelogger/_latestVersion)
 
-## This project is a simple logger library and a sample app to test travis ci + bintray publication process.
+**This project is a simple logger library and a sample app to test travis ci + bintray publication process.**
 
 ## Setup
 
