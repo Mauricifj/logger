@@ -4,7 +4,7 @@ import android.util.Log
 
 /**
  * The simplest logger tool.
- * <p>
+ *
  * This object has a builtin tag and methods to log debug, error, info and warning messages.
  */
 object SimpleLogger {
@@ -13,7 +13,7 @@ object SimpleLogger {
 
     /**
      * Logs a message in debug level.
-     * <p>
+     *
      * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
@@ -24,7 +24,7 @@ object SimpleLogger {
 
     /**
      * Logs a message and an optional throwable in error level.
-     * <p>
+     *
      * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
@@ -36,7 +36,7 @@ object SimpleLogger {
 
     /**
      * Logs a message in info level.
-     * <p>
+     *
      * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
@@ -47,7 +47,7 @@ object SimpleLogger {
 
     /**
      * Logs a message in warning level.
-     * <p>
+     *
      * It uses "SIMPLE.LOGGER.TAG" as its tag.
      *
      * @param[message] message to be logged
