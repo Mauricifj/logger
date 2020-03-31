@@ -9,11 +9,11 @@ android:
     - android-29
 
 script:
-  - ./gradlew clean :logger:assembleRelease
+  - ./gradlew clean :simplelogger:clean :simplelogger:build :simplelogger:assembleRelease
 
 # deploy section
 deploy:
   provider: script
-  script: ./gradlew :logger:bintrayUpload
+  script: ./gradlew :simplelogger:bintrayUpload
   on:
     branch: master
