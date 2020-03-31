@@ -1,4 +1,4 @@
-# Logger
+# SimpleLogger
 
 ## This project is a simple logger to test travis ci + bintray publication process.
 
