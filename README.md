@@ -5,7 +5,7 @@
 
 ## Setup
 
-Add this dependency to your module level build.gradle in dependencies node
+- Add this dependency to your app module level build.gradle in dependencies node
 
 ```kotlin
 dependencies {
@@ -13,8 +13,16 @@ dependencies {
     implementation 'com.mauricifj:simplelogger:1.0.0'
 }
 ```
-
 > Don't forget to check if you have **jcenter()** as a repository.
+
+- Or download *simplelogger-release.aar* from [releases](https://github.com/Mauricifj/simplelogger/releases), move it to your app module libs folder and add this dependency to your app module level build.gradle in dependencies node
+
+```kotlin
+dependencies {
+    ...
+    implementation files('libs/simplelogger-release.aar')
+}
+```
 
 ## Usage
 
