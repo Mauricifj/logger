@@ -52,7 +52,7 @@ afterEvaluate {
                 pom.withXml {
                     def root = asNode()
                     root.appendNode('description', libraryDescription)
-                    root.appendNode('name', libraryName)
+                    root.appendNode('name', bintrayName)
                     root.children().last() + pomConfig
                 }
             }
